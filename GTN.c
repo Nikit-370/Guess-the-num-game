@@ -9,10 +9,11 @@ int main()
     int guess, nguess = 1;
     srand(time(0));
     num = rand() % 100 + 1;
-
+    
+    printf("Guess a number between 1 to 100\n");
+    
     do
     {
-        printf("Guess a number between 1 to 100\n");
         scanf("%d", &guess);
 
         if (guess > num)
